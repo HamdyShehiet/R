@@ -114,15 +114,17 @@
         </section>
         <section class="contact" id="contact">
             <div class="container">
-                <h2 class="title">Contact</h2>
-                <contact-info>
+                <h2 class="title text-center">Contact</h2>
+                <div class="contact-info">
                     <div class="form-box">
                         <h3>Send Me Message</h3>
                         <form method="post">
-                            <input type="email" name="email" id="email" placeholder="Email">
-                            <input type="text" name="name" id="name" placeholder="Name">
-                            <textarea name="message" id="message" placeholder="Message"></textarea>
-                            <input type="submit" value="Send">
+                            <div class="user-details">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            </div>
+                            <textarea name="message" id="message" placeholder="Message" required></textarea>
+                            <div class="submit"><input type="submit" value="Send"></div>
                         </form>
                     </div>
                     <div class="social-links">
@@ -135,7 +137,7 @@
                             <li><a href="#"><img src="assets/icons/github.webp" alt="Github Icon"><span>ridhosatriawan</span></a></li>
                         </ul>
                     </div>
-                </contact-info>
+                </div>
             </div>
         </section> 
     </main>
