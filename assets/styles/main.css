@@ -6,8 +6,8 @@
 :root {
     --fs-16px:16px;
     --fs-18px:18px;
-    --fs-32px:32px;
     --fs-40px:40px;
+    --fs-50px:50px;
     --fw-600:600;
     --fw-700:700;
     --fw-500:500;
@@ -43,16 +43,18 @@ img{
 }
 h1{
     line-height: 120%;
-    font-size: var(--fs-40px);
+    font-size: var(--fs-50px);
     color: var(--dark-gunmetal);
 }
 .title{
-    font-size: var(--fs-32px);
+    font-size: var(--fs-40px);
     color: var(--dark-gunmetal);
 }
 .hire-me{
     display: inline-block;
     padding: 10px 12px;
+    font-size: var(--fs-16px);
+    font-weight: 500;
     border-radius: 8px;
     background-color: var(--dark-gunmetal);
     color: var(--white);
@@ -120,7 +122,7 @@ header .container .logo a{
     }
 }
 section:not(.hero){
-    padding: 40px 0;
+    padding: 60px 0;
 }
 .hero{
     padding: 80px 0 0 0;
@@ -131,11 +133,44 @@ section:not(.hero){
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap:40px 130px;
     min-height: 100vh;
 }
 .hero .container .info p{
     margin: 15px 0;
     font-size: var(--fs-18px);
     color: var(--gray);
+}
+.about-me .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:40px 130px;
+}
+.about-me .container .details p{
+    margin-bottom: 15px;
+    font-size: var(--fs-16px);
+    color: var(--gray);
+}
+.about-me .container .details .btn-flex{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.about-me .container .details .btn-flex a:last-child{
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: var(--fs-16px);
+    font-weight: 500;
+    border: 2px solid var(--dark-gunmetal);
+    color: var(--dark-gunmetal);
+}
+@media (min-width:992px) {
+    .about-me .container .details{
+        width: 40%;
+    }
+    .about-me .container h2{
+        width: 15%;
+    }
 }
