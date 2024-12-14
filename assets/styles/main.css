@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 :root {
-    --fs-32px:32px;
     --fs-16px:16px;
+    --fs-32px:32px;
+    --fs-18px:18px;
+    --fw-600:600;
+    --fw-700:700;
+    --fw-500:500;
     --white: #ffffff;
     --dark-gunmetal: #212529;
     --platinum: #DEE2E6;
@@ -43,7 +47,7 @@ img{
     background-color: var(--dark-gunmetal);
     color: var(--white);
 }
-/* header{
+header{
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -98,10 +102,10 @@ header .container .logo a{
     header .container nav ul li a{
         display: inline-block;
         color: var(--platinum);
-        font-weight: 500;
+        font-weight: 600;
     }
     header .container nav ul li a:hover,
     header .container nav ul li .active{
         color: var(--white);
     }
-} */
+}
