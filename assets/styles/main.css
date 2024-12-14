@@ -5,14 +5,16 @@
 }
 :root {
     --fs-16px:16px;
-    --fs-32px:32px;
     --fs-18px:18px;
+    --fs-32px:32px;
+    --fs-40px:40px;
     --fw-600:600;
     --fw-700:700;
     --fw-500:500;
     --white: #ffffff;
     --dark-gunmetal: #212529;
     --platinum: #DEE2E6;
+    --gray: rgb(115, 115, 115);
 }
 html{
     scroll-behavior: smooth;
@@ -31,19 +33,27 @@ ul{
 a{
     text-decoration: none;
 }
-input{
+input,
+textarea{
     outline: none;
     border: none;
 }
 img{
     max-width: 100%;
 }
+h1{
+    line-height: 120%;
+    font-size: var(--fs-40px);
+    color: var(--dark-gunmetal);
+}
 .title{
     font-size: var(--fs-32px);
     color: var(--dark-gunmetal);
 }
 .hire-me{
-    padding: 10px;
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 8px;
     background-color: var(--dark-gunmetal);
     color: var(--white);
 }
@@ -108,4 +118,24 @@ header .container .logo a{
     header .container nav ul li .active{
         color: var(--white);
     }
+}
+section:not(.hero){
+    padding: 40px 0;
+}
+.hero{
+    padding: 40px 0 0 0;
+    background-color:var(--platinum);
+}
+.hero .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    min-height: 100vh;
+}
+.hero .container .info p{
+    margin: 15px 0;
+    font-size: var(--fs-18px);
+    color: var(--gray);
 }
