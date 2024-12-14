@@ -8,7 +8,7 @@
     --fs-18px:18px;
     --fs-20px:20px;
     --fs-40px:40px;
-    --fs-50px:50px;
+    --fs-54px:54px;
     --fw-600:600;
     --fw-700:700;
     --fw-500:500;
@@ -44,8 +44,11 @@ img{
 }
 h1{
     line-height: 120%;
-    font-size: var(--fs-50px);
+    font-size: var(--fs-54px);
     color: var(--dark-gunmetal);
+}
+section .container h2.text-center{
+    text-align: center;
 }
 .title{
     font-size: var(--fs-40px);
@@ -179,9 +182,6 @@ section:not(.hero){
     background-color: var(--platinum);
     line-height: 160%;
 }
-.services .container h2{
-    text-align: center;
-}
 .services .container >p{
     margin: 25px 0;
     text-align: center;
@@ -215,3 +215,37 @@ section:not(.hero){
     font-weight: 500;
     color: rgb(255 255 255 /0.6);
 }
+/* .blog .container .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.blog .container .courses .course{
+    display: flex;
+    justify-content: center;
+    width: 520px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: var(--platinum);
+}
+.blog .container .courses .course .course-details{
+    padding: 15px;
+}
+.blog .container .courses .course h3{
+    margin-bottom: 10px;
+    font-size: var(--fs-20px);
+    font-weight: 600;
+    color: var(--dark-gunmetal);
+}
+.blog .container .courses .course p{
+    font-size: var(--fs-16px);
+    line-height: 160%;
+    color: var(--dark-gunmetal);
+}
+.blog .container .courses .course  .image {
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray);
+} */
