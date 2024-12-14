@@ -6,6 +6,7 @@
 :root {
     --fs-16px:16px;
     --fs-18px:18px;
+    --fs-20px:20px;
     --fs-40px:40px;
     --fs-50px:50px;
     --fw-600:600;
@@ -173,4 +174,44 @@ section:not(.hero){
     .about-me .container h2{
         width: 15%;
     }
+}
+.services{
+    background-color: var(--platinum);
+    line-height: 160%;
+}
+.services .container h2{
+    text-align: center;
+}
+.services .container >p{
+    margin: 25px 0;
+    text-align: center;
+    font-size: var(--fs-16px);
+    color: var(--gray);
+}
+.services .container .services-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.services .container .services-list .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 250px;
+    padding:30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: var(--dark-gunmetal);
+    color: var(--white);
+}
+.services .container .services-list .service h3{
+    font-size: var(--fs-20px);
+    font-weight: 500;
+}
+.services .container .services-list .service p{
+    font-size: var(--fs-16px);
+    font-weight: 500;
+    color: rgb(255 255 255 /0.6);
 }
