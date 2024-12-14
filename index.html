@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html">R</a></div>
+            <nav>
+                <input type="checkbox"  id="checked">
+                <label for="checked">
+                    <img src="assets/icons/menu.webp" alt="Humburger Icon">
+                </label>
+                <ul>
+                    <li ><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#cotact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="info">
+                    <h1 class="title">Hello I’m Ridho</h1>
+                    <p >Freelancer Web Developer</p>
+                    <a href="#" class="hire-me">Hire Me</a>
+                </div>
+                <div class="image">
+                    <img src="assets/images/user.webp" alt="Image User">
+                </div>
+            </div>
+        </section>
+        <section class="about-me" id="about">
+            <div class="container">
+                <h2 class="title">About Me</h2>
+                <div class="details">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique elit nec malesuada tincidunt. Pellentesque lobortis metus quis ipsum mattis, vitae laoreet est posuere. Mauris bibendum eros massa, sit amet tempor sem lobortis non. </p>
+                    <a href="#" class="hire-me">Hire Me</a>
+                    <a href="#">View CV</a>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="title">Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique elit nec malesuada tincidunt. Pellentesque lobortis.</p>
+                <div class="services-list">
+                    <div class="service">
+                        <img src="assets/icons/web-development.webp" alt="Web Development Icon">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique elit nec </p>
+                    </div>
+                    <div class="service">
+                        <img src="assets/icons/web-design.webp" alt="Web Design Icon">
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique elit nec </p>
+                    </div>
+                    <div class="service">
+                        <img src="assets/icons/mobile.webp" alt="App Design Icon">
+                        <h3>App Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique elit nec </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog" id="blog">
+            <div class="container">
+                <h2 class="title">Blog</h2>
+                <div class="courses">
+                    <div class="course">
+                        <div class="image-course">
+                            <img src="assets/images/html.webp" alt="Html Course">
+                        </div>
+                        <div class="course-details">
+                            <h3>Learn HTML</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut iste sint ullam omnis?</p>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="image-course">
+                            <img src="assets/images/css.webp" alt="CSS Course">
+                        </div>
+                        <div class="course-details">
+                            <h3>Learn HTML</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut iste sint ullam omnis?</p>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="image-course">
+                            <img src="assets/images/javascript.webp" alt="JavaScript Course">
+                        </div>
+                        <div class="course-details">
+                            <h3>Learn HTML</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut iste sint ullam omnis?</p>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="image-course">
+                            <img src="assets/images/go.webp" alt="Go Course">
+                        </div>
+                        <div class="course-details">
+                            <h3>Learn HTML</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ut iste sint ullam omnis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="title">Contact</h2>
+                <contact-info>
+                    <div class="form-box">
+                        <h3>Send Me Message</h3>
+                        <form method="post">
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                    <div class="social-links">
+                        <h3>Send Me Message</h3>
+                        <ul>
+                            <li><a href="#"><img src="assets/icons/whatsapp.png" alt="Whatsapp Icon"><span>089522231321</span></a></li>
+                            <li><a href="#"><img src="assets/icons/instagram.png" alt="Instagram Icon"><span>satriawan.ridho</span></a></li>
+                            <li><a href="#"><img src="assets/icons/facebook.png" alt="Facebook Icon"><span>Ridho Satriawan</span></a></li>
+                            <li><a href="#"><img src="assets/icons/linkedin.png" alt="LinkedIn Icon"><span>Ridho Satriawan</span></a></li>
+                            <li><a href="#"><img src="assets/icons/github.webp" alt="Github Icon"><span>ridhosatriawan</span></a></li>
+                        </ul>
+                    </div>
+                </contact-info>
+            </div>
+        </section>
+    </main> -->
 </body>
 </html>
